@@ -1,6 +1,10 @@
+import { useRouter } from "next/router";
+import Layout from "../comps/Layout"
 
 export default function Home() {
-  return (
-    <div> </div>
-  )
+
+    const r = useRouter();
+    return (
+        <Layout></Layout>
+    )
 }
