@@ -33,20 +33,3 @@ yarn-error.log*
 # vercel
 .vercel
 .DS_Store
-.next/trace
-package.json
-.gitignore
-node_modules/.package-lock.json
-.next/static/development/_buildManifest.js
-.next/static/chunks/pages/_app.js
-.next/static/chunks/webpack.js
-.next/server/pages/index.js
-.next/server/middleware-build-manifest.js
-.next/cache/webpack/server-development/index.pack
-.next/cache/webpack/server-development/0.pack
-.next/cache/webpack/client-development/index.pack
-.next/cache/webpack/client-development/0.pack
-.next/trace
-.next/build-manifest.json
-package-lock.json
-.next/server/pages-manifest.json
