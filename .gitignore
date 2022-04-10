@@ -11,10 +11,6 @@
 # next.js
 /.next/
 /out/
-.next/trace/
-.next/cache/
-.next/server/
-.next/static/
 
 # production
 /build
@@ -53,3 +49,4 @@ node_modules/.package-lock.json
 .next/trace
 .next/build-manifest.json
 package-lock.json
+.next/server/pages-manifest.json
