@@ -5,14 +5,27 @@ const GridComp = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 90%;
 `
 const CatCont = styled.div`
     width: 110px;
     height: 110px;
     margin: 0.7em;
+
+    @media only screen and (max-width: 600px) and (max-height: 750px) {
+        width; 70px;
+        height: 70px;
+    }
+    @media only screen and (min-width: 700px) {
+        width: 150px;
+        height: 150px;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 180px;
+        height: 180px;
+    }
 `
 const CatImg = styled.img`
-    object-fit: cover;
     height: 70%;
     width: 70%;
 `
