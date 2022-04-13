@@ -1,0 +1,1 @@
+import ChallengeCont from "../comps/Challenge_cont";
