@@ -40,5 +40,7 @@ export const BtnText = {
     intro: "Start Logging",
     next: "Next",
     back: "Back",
-    skip: "Skip"
+    skip: "Skip",
+    view: "View More",
+    learn: "Learn More"
 }

@@ -108,3 +108,37 @@ export function NextButton() {
     >{BtnText.next}
     </Button>
 }
+
+export function ViewButton() {
+    const r = useRouter();
+    return <Button
+        BtnStyle="orange"
+        onClick={
+            () => {
+                r.replace(
+                    {
+                        pathname: "/"
+                    }
+                )
+            }
+        }
+    >{BtnText.view}
+    </Button>
+}
+
+export function LearnButton() {
+    const r = useRouter();
+    return <Button
+        BtnStyle="orange"
+        onClick={
+            () => {
+                r.replace(
+                    {
+                        pathname: "/"
+                    }
+                )
+            }
+        }
+    >{BtnText.learn}
+    </Button>
+}
