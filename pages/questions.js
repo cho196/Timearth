@@ -1,6 +1,4 @@
 import { useRouter } from "next/router";
-import { BackgroundShape } from "../comps/Layout";
-import { NextButton, BackButton, SkipButton } from "../comps/Button"
 import styled from 'styled-components';
 import Breadcrumb from "../comps/Breadcrumb";
 import { CategoryName, Question } from "../data/question_content";
@@ -20,15 +18,48 @@ export const SelectionCont = styled.div`
     border-radius: 6px;
     margin: .8em;
 `
+export const BackButton = styled.div`
+    display: flex;
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+    left: 14px;
+    top: 45px;
+`
+export const SkipButton = styled.div`
+    display: flex;
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+    color: #BFBFBF;
+    right: 30px;
+    top: 45px;
+`
 
 export default function Questions() {
 
-    // const r = useRouter();
+    const r = useRouter();
 
     return (
         <Layout>
-            <BackButton />
-            <SkipButton />
+            <BackButton
+                onClick={
+                    () => {
+                        r.push(
+                            {
+                                pathname: ""
+                            }
+                        )
+                    }
+                }
+            >Back</BackButton>
+            <SkipButton>Skip</SkipButton>
             <Breadcrumb />
             <h1>{CategoryName}</h1>
             <h2>{Question}</h2>
@@ -38,9 +69,7 @@ export default function Questions() {
                 <SelectionCont></SelectionCont>
                 <SelectionCont></SelectionCont>
             </div>
-            <BackgroundShape></BackgroundShape>
-            <NextButton></NextButton>
+            <div className="background-shape"></div>
         </Layout>
-
     )
 }
