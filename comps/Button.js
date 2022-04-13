@@ -27,6 +27,16 @@ const TextButton = styled.div`
     top: 45px;
     color: ${props => TextBtnStyle[props.TextBtnStyle].color}
 `
+const StartButton = styled.button`
+    background-color: ${props => BtnStyle[props.BtnStyle].bgcolor};
+    color: ${props => BtnStyle[props.BtnStyle].txtcolor};
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    border-radius: 8px;
+    width: 110px;
+    height: 30px;
+`
 
 export function BackButton() {
     const r = useRouter();
@@ -107,4 +117,22 @@ export function NextButton() {
         }
     >{BtnText.next}
     </Button>
+}
+
+export function SecondaryButton() {
+    const r = useRouter();
+    
+    return <StartButton
+        BtnStyle="blue"
+        onClick={
+            () => {
+                r.replace(
+                    {
+                        pathname: "./"
+                    }
+                )
+            }
+        }
+    >{BtnText.start}
+    </StartButton>
 }
