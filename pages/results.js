@@ -43,7 +43,6 @@ export function ResultCard() {
             
             <h3>What Could Be <Em>Improved</Em></h3>
             <CardImg src={sadearth.img} />
- ]
         </CardComp>
     )
 }
