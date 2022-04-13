@@ -41,6 +41,8 @@ export const BtnText = {
     next: "Next",
     back: "Back",
     skip: "Skip",
-    view: "View More",
-    learn: "Learn More"
+    learn: "Learn More",
+    again: "Start Over",
+    see: "See Challenges"
+
 }

@@ -109,23 +109,6 @@ export function NextButton() {
     </Button>
 }
 
-export function ViewButton() {
-    const r = useRouter();
-    return <Button
-        BtnStyle="orange"
-        onClick={
-            () => {
-                r.replace(
-                    {
-                        pathname: "/"
-                    }
-                )
-            }
-        }
-    >{BtnText.view}
-    </Button>
-}
-
 export function LearnButton() {
     const r = useRouter();
     return <Button
@@ -140,5 +123,39 @@ export function LearnButton() {
             }
         }
     >{BtnText.learn}
+    </Button>
+}
+
+export function AgainButton() {
+    const r = useRouter();
+    return <Button
+        BtnStyle="orange"
+        onClick={
+            () => {
+                r.replace(
+                    {
+                        pathname: "/intro"
+                    }
+                )
+            }
+        }
+    >{BtnText.again}
+    </Button>
+}
+
+export function SeeButton() {
+    const r = useRouter();
+    return <Button
+        BtnStyle="orange"
+        onClick={
+            () => {
+                r.replace(
+                    {
+                        pathname: "/challenges"
+                    }
+                )
+            }
+        }
+    >{BtnText.see}
     </Button>
 }
